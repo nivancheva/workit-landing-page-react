@@ -1,1 +1,126 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('./fonts/manrope/static/Manrope-Regular.ttf') format("truetype");
+  src: url('./fonts/manrope/Manrope-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format("truetype");
+  src: url('./fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format("truetype-variations");
+  font-weight: 600;
+}
+
+
+:root {
+  --clr-purple: hsl(273, 85%, 13%);
+  --clr-green: hsl(150, 100%, 63%);
+  --clr-grey-purple: hsl(271, 12%, 34%);
+  --clr-light-purple: hsl(276, 100%, 99%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --fz-main: 1.125rem;
+  --fz-hl: 5rem;
+  --fz-h2: 3.5rem;
+  --fz-h3: 2rem;
+
+  --ff-main: 'Manrope';
+  --ff-heading: 'Fraunces';
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+body {
+  font-size: var(--fz-main);
+  font-family: var(--ff-main);
+  font-weight: var(--fw-regular);
+  line-height: 2rem;
+}
+
+h1, 
+h2,
+h3,
+h4 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semi-bold);
+}
+
+h1 {
+  font-size: var(--fz-hl);
+  line-height: 5rem;
+}
+
+h2 {
+  font-size: var(--fz-h2);
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: var(--fz-h3);
+  line-height: 2rem;
+}
+
+.button {
+  --padding-inline: 1.5em;
+  --padding-block: 1em;
+
+  border: 1px solid;
+  cursor: pointer;
+  padding: var(--padding-block) var(--padding-inline);
+  font-weight: bold;
+}
+
+.button:hover {
+  color: var(--clr-green);
+}
+
+.button-primary {
+  background-color: var(--clr-green);
+  color: var(--clr-purple);
+  border-color: var(--clr-green);
+}
+
+.button-primary:hover {
+  background-color: inherit;
+  border: 1px solid var(--clr-green);
+}
+
+.button-secondary {
+  background-color: inherit;
+  color: var(--clr-white);
+  border-color: var(--clr-purple);
+
+  position: relative;
+}
+
+.button-secondary::after {
+  --height: 2px;
+
+  position: absolute;
+  content: "";
+  height: var(--height);
+  background-color: var(--clr-green);
+  left: var(--padding-inline);
+  right: var(--padding-inline);
+  bottom: calc(var(--padding-block) - var(--height));
+}
