@@ -107,11 +107,20 @@ h3 {
 .button-secondary {
   background-color: inherit;
   color: var(--clr-white);
+}
 
+.button-secondary, 
+.underline {
   position: relative;
 }
 
-.button-secondary::after {
+.underline {
+  --padding-inline: 0px;
+  --padding-block: 10px;
+}
+
+.button-secondary::after,
+.underline::after {
   --height: 2px;
 
   position: absolute;
