@@ -20,6 +20,12 @@
     transform: translate(-50%, 50px);
 }
 
+.patternOne,
+.patternTwo,
+.patternThree {
+    display: none;
+}
+
 .container {
     margin-inline: 1em;
 }
@@ -61,6 +67,10 @@ h3 {
     border: 1px solid var(--clr-purple);
     margin: 0 auto;
     border-radius: 50%;
+}
+
+.application {
+    position: relative;
 }
 
 .application-founder {
@@ -107,6 +117,33 @@ h3 {
 
     .hero {
         padding-bottom: 12.5rem;
+
+        overflow: hidden;
+    }
+
+    .patternOne,
+    .patternTwo,
+    .patternThree {
+        display: block;
+        position: absolute;
+    }
+
+    .patternOne {
+        transform: translate(-60%);
+        top: 0;
+        left: 0;
+    }
+
+    .patternTwo {
+        transform: translate(60%, 15rem);
+        top: 0;
+        right: 0;
+    }
+
+    .patternThree {
+        transform: translate(-20%, 50%);
+        bottom: 0;
+        right: 0;
     }
 
     .image-hero {
@@ -129,6 +166,7 @@ h3 {
     .application-founder {
         margin-left: 180px;
         margin-top: 0;
+        text-align: left;
     }
 
     .application-founder p {
@@ -152,6 +190,32 @@ h3 {
         max-width: 1110px;
     }
 
+    .patternOne,
+    .patternTwo,
+    .patternThree 
+    {
+        display: block;
+        position: absolute;
+    }
+
+    .patternOne {
+        transform: translate(-40%);
+        top: 0;
+        left: 0;
+    }
+
+    .patternTwo {
+        transform: translate(40%, 15rem);
+        top: 0;
+        right: 0;
+    }
+
+    .patternThree {
+        transform: translate(-50%, 50%);
+        bottom: 0;
+        right: 0;
+    }
+
     h3 {
         margin-bottom: 1.75rem;
     }
@@ -164,6 +228,7 @@ h3 {
 
     .hero {
         padding-bottom: 20rem;
+        overflow: hidden;
     }
 
     .image-hero {

@@ -106,6 +106,10 @@ h3 {
   border: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 .button:hover {
   color: var(--clr-green);
 }

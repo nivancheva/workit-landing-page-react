@@ -6,6 +6,9 @@ import iconFacebook from './images/icon-facebook.svg';
 import iconInsta from './images/icon-instagram.svg';
 import iconTwitter from './images/icon-twitter.svg';
 import imageHero from './images/image-hero.webp';
+import patternOne from './images/bg-pattern-1.svg'
+import patternTwo from './images/bg-pattern-2.svg'
+import patternThree from './images/bg-pattern-3.svg'
 
 function App() {
   return (
@@ -24,6 +27,8 @@ function App() {
             <button className='button button-primary'>Learn More</button>
           </div>
             <img className='image-hero' src={imageHero}/>
+            <img className='patternOne' src={patternOne} aria-hidden='true'/>
+            <img className='patternTwo' src={patternTwo} aria-hidden='true'/>
         </div>
         <div className='features'>
           <div className='container grid-container'>
@@ -58,6 +63,7 @@ function App() {
               <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a call.</p>
               <button className='button button-primary'>Apply for access</button>
             </div>
+            <img className='patternThree' src={patternThree} aria-hidden='true'/>
           </div>
         </div>
       </main>
