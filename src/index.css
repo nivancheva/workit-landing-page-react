@@ -31,6 +31,24 @@
   --fw-semi-bold: 600;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --fz-main: 1.125rem;
+    --fz-hl: 3.75rem;
+    --fz-h2: 3.5rem;
+    --fz-h3: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    --fz-main: 1rem;
+    --fz-hl: 2.875rem;
+    --fz-h2: 1.75rem;
+    --fz-h3: 1.5rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -54,7 +72,6 @@ body {
   font-size: var(--fz-main);
   font-family: var(--ff-main);
   font-weight: var(--fw-regular);
-  line-height: 2rem;
 }
 
 h1, 
@@ -63,21 +80,19 @@ h3,
 h4 {
   font-family: var(--ff-heading);
   font-weight: var(--fw-semi-bold);
+  line-height: 1em;
 }
 
 h1 {
   font-size: var(--fz-hl);
-  line-height: 5rem;
 }
 
 h2 {
   font-size: var(--fz-h2);
-  line-height: 3.5rem;
 }
 
 h3 {
   font-size: var(--fz-h3);
-  line-height: 2rem;
 }
 
 .button {
@@ -111,11 +126,11 @@ h3 {
 
 .button-secondary, 
 .underline {
+  --padding-inline: 0px;
   position: relative;
 }
 
 .underline {
-  --padding-inline: 0px;
   --padding-block: 10px;
 }
 
