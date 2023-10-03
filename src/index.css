@@ -35,7 +35,7 @@
   :root {
     --fz-main: 1.125rem;
     --fz-hl: 3.75rem;
-    --fz-h2: 3.5rem;
+    --fz-h2: 3rem;
     --fz-h3: 2rem;
   }
 }
@@ -72,6 +72,7 @@ body {
   font-size: var(--fz-main);
   font-family: var(--ff-main);
   font-weight: var(--fw-regular);
+  line-height: 1.6;
 }
 
 h1, 

@@ -30,6 +30,10 @@
     justify-content: space-between;
 }
 
+h3 {
+    margin-bottom: 1rem;
+}
+
 .features {
     background-color: var(--clr-light-purple);
     padding-top: 8em;
@@ -122,8 +126,17 @@
         margin-inline: auto;
     }
 
+    .application-founder {
+        margin-left: 180px;
+        margin-top: 0;
+    }
+
     .application-founder p {
         margin: 1.5rem 0;
+    }
+
+    .imagefounder {
+        margin: 0;
     }
 }
 
@@ -137,6 +150,10 @@
         margin-inline: auto;
         width: 80%;
         max-width: 1110px;
+    }
+
+    h3 {
+        margin-bottom: 1.75rem;
     }
 
     .hero-header {
@@ -157,8 +174,20 @@
         padding-top: 16rem;
     }
 
+    .application-founder {
+        margin-left: 20rem;
+        margin-top: -10rem;
+        text-align: left;
+        padding: 4rem;
+    }
+
     .application-founder p {
         margin: 2rem 0;
+    }
+
+    .imagefounder {
+        width: 26rem;
+        margin: 0;
     }
 }
 
