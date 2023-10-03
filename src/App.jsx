@@ -53,7 +53,7 @@ function App() {
         <div className='application'>
           <div className='container'>
             <img className='imagefounder' src={imgFounder}/>
-            <div className='application-founder grid-gap'>
+            <div className='application-founder'>
               <h2>Be the first to test</h2>
               <p>Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a call.</p>
               <button className='button button-primary'>Apply for access</button>
